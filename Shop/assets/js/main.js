@@ -1,4 +1,4 @@
-console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
+
 
 /* ---------------------------------------------- /*
  * Preloader
@@ -606,8 +606,8 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
 
-        var mkr = new google.maps.LatLng(40.6700, -74.2000);
-        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(40.6700, -73.9400);
+        var mkr = new google.maps.LatLng(34.031428,-118.2071542,17);
+        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(34.031428,-118.2071542,17);
 
         function init() {
             // Basic options for a simple Google Map
