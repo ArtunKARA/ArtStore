@@ -28,10 +28,6 @@ sepetiGuncelleButton.addEventListener('click', function() {
 });
 
 
-sepetiOnaylaButton.addEventListener('click', function() {
-  sepetiOnayla();
-});
-
 // Ürünü sepetten kaldırma fonksiyonu
 function urunuKaldir(button) {
   var urunSatiri = button.closest('tr'); 
@@ -71,7 +67,26 @@ function sepetiGuncelle() {
     });
 }
 
-// Sepeti onayla fonksiyonu
-function sepetiOnayla() {
-  alert('Sepetiniz onaylandı!');
-}
+$(document).ready(function() {
+  $('#aprove-btn').magnificPopup({
+    items: {
+      src: '#confirmation-popup',
+      type: 'inline'
+    },
+    midClick: true,
+    callbacks: {
+      open: function() {
+        // Pop-up açıldığında yapılacak işlemler
+      },
+      close: function() {
+        // Pop-up kapatıldığında yapılacak işlemler
+      }
+    }
+  });
+
+  // Tamamlandı butonuna tıklandığında
+  $(document).on('click', '#confirm-cart-btn', function() {
+    $.magnificPopup.close(); // Pop-up kapat
+    // İşlemleri burada tamamla veya istediğin başka bir işlemi gerçekleştir
+  });
+});
