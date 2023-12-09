@@ -90,3 +90,17 @@ $(document).ready(function() {
     // İşlemleri burada tamamla veya istediğin başka bir işlemi gerçekleştir
   });
 });
+
+$('.open-popup-link').magnificPopup({
+  items: {
+    src: '#confirmation-popup'
+  },
+  type: 'inline',
+  DelayNode: 2000, // Pop-up açılırken geçen süre
+  removalDelay: 1500, // Pop-up kapatılırken geçen süre
+  callbacks: {
+    beforeOpen: function() {
+      this.st.mainClass = 'mfp-zoom-in'; // Açılırken kullanılacak animasyon efekti
+    }
+  }
+});
