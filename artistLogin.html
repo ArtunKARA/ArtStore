@@ -8,7 +8,7 @@
     Document Title
     =============================================
     -->
-    <title>ArtStore | Sanatçılar</title>
+    <title>ArtStore | Sanatçı Giriş Ekranı</title>
     <!--  
     Favicons
     =============================================
@@ -63,7 +63,7 @@
                     <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">GİRİŞ</a>
                       <ul class="dropdown-menu">
                         <li><a href="login.html">GİRİŞ-Kayıt Ol</a></li>
-                         <li><a href="artistLogin.html">Sanatçı GİRİŞİ</a></li>
+                        <li><a href="artistLogin.html">Sanatçı GİRİŞİ</a></li>
                         <li><a href="applyArtist.html">Sanatçı Olarak Başvur</a></li>
                       </ul>
                     </li>
@@ -72,125 +72,22 @@
         </div>
       </nav>
       <div class="main">
-        <section class="module bg-dark-60 shop-page-header" data-background="assets/pitcure/sanatci.png">
+        <section class="module">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Sanatçılar</h2>
-                <div class="module-subtitle font-serif">Sanatçılarımız, duygularını renklere ve formlara yansıtan özgün ve tutkulu eserler ortaya koyuyor.<div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="module-small">
-          <div class="container">
-            <form class="row">
-              <div class="col-sm-3 mb-sm-20">
-                <select class="form-control">
-                  <option selected="selected">Hepsi</option>
-                  <option>Kadın</option>
-                  <option>Erkek</option>
-                </select>
-              </div>
-              <div class="col-sm-6 mb-sm-20">
-                <select class="form-control">
-                  <option selected="selected">Hepsi</option>
-                  <option>Resim Sanatçıları</option>
-                  <option>Heykel Sanatçıları</option>
-                  <option>Fotoğrafçılar</option>
-                  <option>Seramik Sanatçıları</option>
-                  <option>Grafik Tasarımcılar</option>
-                  <option>Performans Sanatçıları</option>
-                  <option>Video Sanatçıları</option>
-                  <option>Enstalasyon Sanatçıları</option>
-                </select>
-              </div>
-              <div class="col-sm-3">
-                <button class="btn btn-block btn-round btn-g" type="submit">Uygula</button>
-              </div>
-            </form>
-          </div>
-        </section>
-        <hr class="divider-w">
-        <section class="module-small">
-          <div class="container">
-            <div class="row multi-columns-row">
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/AylinKaya.png" alt="Aylin Kaya"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b" href="aylinkaya.html"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
+              <div class="col-sm-8 col-sm-offset-2">
+                <h4 class="font-alt mb-0">Sanatçı Giriş Ekranı</h4>
+                <hr class="divider-w mt-10 mb-20">
+                <form class="form" role="form">
+                  <div class="form-group">
+                    <label for="fMail">Kullanıcı Adı</label><br>
+                    <input id="fMail" class="form-control input-lg" type="text" placeholder="Kullanıcı Adınız" required/>
+                    <label for="fMail">Şifre</label><br>
+                    <input id="fMail" class="form-control input-lg" type="text" placeholder="Şifreniz" required/>
+                    <hr>
+                    <button id="forgotMailButton" class="btn btn-default btn-circle" type="button"><i class="fa fa-chevron-right"></i><a href="Artist/adminIndex.html">Giriş</a></button>
                   </div>
-                  <h4 class="shop-item-title font-alt"><a href="aylinkaya.html">Aylin Kaya</a></h4>Heykel &amp; Enstalasyon Sanatı
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/ZeynepArslan.png" alt="Zeynep Arslan"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b" href="zeyneparslan.html"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="zeyneparslan.html">Zeynep Arslan</a></h4>Soyut Resimler &amp; Yağlı Boya Tablolar
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/CanGürkan.png" alt="Can Gürkan"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">Can Gürkan</a></h4>Doğa Manzaraları &amp; Peyzaj Çalışmaları
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/EceDemir.png" alt="Ece Demir"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">Ece Demir</a></h4>Kolaj Çalışmaları &amp; Doğa Temalı Suluboya
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/EmreKaya.png" alt="Emre Kaya"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">Emre Kaya</a></h4>Sokak Sanatı &amp; Graffiti
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/SedaYılmaz.png" alt="Seda Yılmaz"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">Seda Yılmaz</a></h4>Desenli İllüstrasyonlar &amp; Doku Çalışmaları
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/EfeYılmaz.png" alt="Efe Yılmaz"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">Efe Yılmaz</a></h4>Yaratıcı Enstalasyonlar &amp; Modern Sanat
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/İremAksoy.png" alt="İrem Aksoy"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">İrem Aksoy</a></h4>Grafik Tasarım &amp; Dijital Sanat
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="shop-item">
-                  <div class="shop-item-image"><img src="assets/pitcure/artists/MelikeŞahin.png" alt="Accessories Pack"/>
-                    <div class="shop-item-detail"><a class="btn btn-round btn-b"><span class="icon-magnifying-glass">Sanatçının Dünyasını Keşfet</span></a></div>
-                  </div>
-                  <h4 class="shop-item-title font-alt"><a href="#">Melike Şahin</a></h4>Fotoğrafçılık &amp; Soyut Portre 
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="pagination font-alt"><a href="#"><i class="fa fa-angle-left"></i></a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                </form>
               </div>
             </div>
           </div>
@@ -288,6 +185,5 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/forgotMail.js"></script>
   </body>
 </html>
