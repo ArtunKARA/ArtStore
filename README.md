@@ -1,2 +1,3 @@
 # ArtStore
-**https://artunkara.github.io/ArtStore/
+Live Demo(Canlı): https://artunkara.github.io/ArtStore/
+
